@@ -19,7 +19,7 @@ def get_video_info(video_path):
 # process the files in a folder and calculate ideal resolution, max framerate, and files matching ideal resolution/framerate
 def calculate_ideal_profile(folder_path):
     files = os.listdir(folder_path)
-    image_files = [f for f in files if f.lower().endswith(('png', 'jpg', 'jpeg', 'bmp', 'tiff', 'jfif'))]
+    image_files = [f for f in files if f.lower().endswith(('png', 'jpg', 'jpeg', 'bmp', 'tiff', 'jfif', 'webp'))]
     video_files = [f for f in files if f.lower().endswith(('mp4', 'avi', 'mov', 'mkv'))]
 
     resolutions = []  # all resolutions of images and videos
